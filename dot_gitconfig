@@ -1,20 +1,45 @@
 [user]
 	name = Ahmed
 	email = ahmedelsharawy117@gmail.com
+
 [init]
 	defaultBranch = main
 
-[alias]
-  st = status
-  df = diff
-  co = checkout
-  br = branch
-  cm = commit -m
-  lg = log --oneline --graph --decorate --all
-  unstage = reset HEAD --
-  amend = commit --amend --no-edit
-  last = log -1 HEAD
-  uncommit = reset --soft HEAD~1
-
 [core]
-  editor = nvim
+	editor = nvim
+	autocrlf = input
+
+[pull]
+	rebase = false
+
+[push]
+	default = simple
+	autoSetupRemote = true
+
+[alias]
+	st = status
+	df = diff
+	co = checkout
+	br = branch
+	cm = commit -m
+	lg = log --oneline --graph --decorate --all
+	unstage = reset HEAD --
+	amend = commit --amend --no-edit
+	last = log -1 HEAD
+	ucm = reset --soft HEAD~1
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+	undo = reset --soft HEAD~1
+	wip = log --oneline --since='2 days ago'
+	cleanup = checkout main && pull origin main && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d
+	back = checkout -
+	save = stash push -m
+	pop = stash pop
+	contributors = shortlog --sn --n --email
+	aliases = config --get-regexp alias
+	what = whatchanged --since='2 weeks ago'
+	new = log HEAD..main --oneline
+	ahead = log main..HEAD --oneline
+
+[color]
+	ui = auto

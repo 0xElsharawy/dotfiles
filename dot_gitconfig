@@ -26,7 +26,6 @@
 	unstage = reset HEAD --
 	amend = commit --amend --no-edit
 	last = log -1 HEAD
-	ucm = reset --soft HEAD~1
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 	graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
 	undo = reset --soft HEAD~1

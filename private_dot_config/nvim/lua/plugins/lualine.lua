@@ -36,7 +36,7 @@ return {
                 lualine_c = {
                     'branch',
                     { 'diff', symbols = { added = ' ', modified = '󰏬 ', removed = ' ' } },
-                    sep,
+                    -- sep,
                     {
                         'diagnostics',
                         symbols = {
@@ -46,7 +46,7 @@ return {
                             info = ' ',
                         },
                     },
-                    lsp,
+                    -- lsp,
                 },
                 lualine_x = { 'encoding', 'fileformat', 'filetype' },
                 lualine_y = { 'progress' },

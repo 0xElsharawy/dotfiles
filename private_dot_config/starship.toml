@@ -29,8 +29,6 @@ disabled = true
 disabled = true
 [lua]
 disabled = true
-[python]
-disabled = true
 [perl]
 disabled = true
 [gradle]

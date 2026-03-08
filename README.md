@@ -11,7 +11,7 @@ My personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 - **Terminal**: [kitty](https://sw.kovidgoyal.net/kitty/) + tmux
 - **Terminal File Manager**: [yazi](https://github.com/sxyazi/yazi)
 - **File Manager**: Nautilus (GNOME Files)
-- **App Launcher**: [vicinae](https://github.com/vicinae/vicinae)
+- **App Launcher**: [vicinae](https://github.com/vicinaehq/vicinae)
 - **Notifications**: [mako](https://github.com/emersion/mako)
 - **Editor**: Neovim + VSCodium
 - **Browser**: [Zen](https://zen-browser.com/)

@@ -61,7 +61,7 @@ My personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 2. Initialize my dotfiles:
 
    ```bash
-   chezmoi init --source https://github.com/yourusername/dotfiles
+   chezmoi init --source https://github.com/0xElsharawy/dotfiles
    ```
 
 3. Apply the dotfiles:
@@ -111,27 +111,6 @@ My personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 | `Ctrl+p` | History search backward |
 | `Ctrl+n` | History search forward  |
 | `Tab`    | Completion menu         |
-
-## Custom Aliases
-
-```bash
-nv      # nvim
-v       # vim
-ls      # eza --icons
-ll      # eza -lah --icons
-tree    # eza -T --icons
-ff      # fastfetch
-lg      # lazygit
-yz      # yazi
-oc      # opencode
-mk      # make
-cm      # chezmoi
-up      # sudo pacman -Syu
-..      # cd ..
-.2      # cd ../..
-.3      # cd ../../..
-.4      # cd ../../../..
-```
 
 ## File Structure
 

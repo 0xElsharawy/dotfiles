@@ -14,7 +14,7 @@ return {
                 typescript = { 'biome' },
                 markdown = { 'prettier' },
                 lua = { 'stylua' },
-                python = { 'ruff_format', 'black' },
+                python = { 'ruff_format' },
                 go = { 'gofmt', 'goimports', 'golines' },
                 rust = { 'rustfmt' },
                 bash = { 'shfmt' },

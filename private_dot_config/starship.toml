@@ -47,3 +47,5 @@ disabled = true
 disabled = true
 [zig]
 disabled = true
+[typst]
+disabled = true

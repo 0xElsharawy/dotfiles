@@ -44,6 +44,12 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# Spark
+export SPARK_HOME="/opt/spark"
+export PATH="$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin"
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk"
+export PATH="$JAVA_HOME/bin:$PATH"
+
 export MANPAGER="nvim +Man!"
 
 # Plugins
@@ -120,6 +126,7 @@ alias pingo='ping google.com'
 alias tf='terraform'
 alias q='exit'
 alias cls='clear'
+alias cx='chmod +x'
 alias bt='bluetoothctl'
 alias yz='yazi'
 alias oc='opencode'
